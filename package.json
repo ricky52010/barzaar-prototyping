@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node --stage [0] server/server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/ReacherYin/barzaar-prototyping#readme",
   "dependencies": {
     "babel": "^5.8.34",
+    "express": "^4.13.3",
     "history": "^1.17.0",
     "jade": "^1.11.0",
     "react": "^0.14.6",

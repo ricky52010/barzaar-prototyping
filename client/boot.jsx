@@ -3,13 +3,9 @@
 import React, { Component, PropTypes } from 'react';
 import DOM, { render } from 'react-dom';
 import { Router, Route, Link } from 'react-router';
+import routes from '../shared/routes.jsx';
 
-export default class About extends Component {
-  render() {
-    return (
-      <div className="container">
-        <h1>About</h1>
-      </div>
-    );
-  }  
-}
+
+render( routes, document.getElementById('app'));
+
+

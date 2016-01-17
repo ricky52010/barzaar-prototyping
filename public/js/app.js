@@ -17,23 +17,50 @@ webpackJsonp([0],{
 
 	var _reactRouter = __webpack_require__(159);
 
-	var _componentsAppJsx = __webpack_require__(208);
+	var _sharedRoutesJsx = __webpack_require__(208);
+
+	var _sharedRoutesJsx2 = _interopRequireDefault(_sharedRoutesJsx);
+
+	(0, _reactDom.render)(_sharedRoutesJsx2['default'], document.getElementById('app'));
+
+/***/ },
+
+/***/ 208:
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouter = __webpack_require__(159);
+
+	// Components
+
+	var _componentsAppJsx = __webpack_require__(214);
 
 	var _componentsAppJsx2 = _interopRequireDefault(_componentsAppJsx);
 
-	var _componentsAboutJsx = __webpack_require__(209);
+	var _componentsAboutJsx = __webpack_require__(215);
 
 	var _componentsAboutJsx2 = _interopRequireDefault(_componentsAboutJsx);
 
-	var _componentsServicesJsx = __webpack_require__(210);
+	var _componentsServicesJsx = __webpack_require__(216);
 
 	var _componentsServicesJsx2 = _interopRequireDefault(_componentsServicesJsx);
 
-	var _componentsContactJsx = __webpack_require__(211);
+	var _componentsContactJsx = __webpack_require__(217);
 
 	var _componentsContactJsx2 = _interopRequireDefault(_componentsContactJsx);
 
-	(0, _reactDom.render)(_react2['default'].createElement(
+	exports['default'] = _react2['default'].createElement(
 	  _reactRouter.Router,
 	  null,
 	  _react2['default'].createElement(
@@ -43,11 +70,12 @@ webpackJsonp([0],{
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/services', component: _componentsServicesJsx2['default'] }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/contact', component: _componentsContactJsx2['default'] })
 	  )
-	), document.getElementById('app'));
+	);
+	module.exports = exports['default'];
 
 /***/ },
 
-/***/ 208:
+/***/ 214:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -156,7 +184,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 209:
+/***/ 215:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -203,7 +231,7 @@ webpackJsonp([0],{
 	        _react2['default'].createElement(
 	          'h1',
 	          null,
-	          'About'
+	          'About Page!'
 	        )
 	      );
 	    }
@@ -217,7 +245,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 210:
+/***/ 216:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -264,7 +292,7 @@ webpackJsonp([0],{
 	        _react2['default'].createElement(
 	          'h1',
 	          null,
-	          'Services'
+	          'Services Page!'
 	        )
 	      );
 	    }
@@ -278,7 +306,7 @@ webpackJsonp([0],{
 
 /***/ },
 
-/***/ 211:
+/***/ 217:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -325,7 +353,7 @@ webpackJsonp([0],{
 	        _react2['default'].createElement(
 	          'h1',
 	          null,
-	          'Contact'
+	          'Contact Page!'
 	        )
 	      );
 	    }

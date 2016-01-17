@@ -5,7 +5,7 @@ var webpack= require('webpack');
 
 module.exports= {
   entry: {
-    app: Path.resolve(__dirname, 'app/boot-client.jsx'),
+    app: Path.resolve(__dirname, 'client/boot.jsx'),
     vendors: [
       'react', 'react-dom', 'redux', 'react-redux', 'react-router', 'classnames'
     ]
